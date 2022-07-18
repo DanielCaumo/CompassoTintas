@@ -2,7 +2,6 @@
 
 Status do Projeto
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-[GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
 
 
 ## Índice 
@@ -43,7 +42,7 @@ Status do Projeto
 <h2>Desenvolvedor</h2>
 ## Autores
 
-| [<img src="https://https://avatars.githubusercontent.com/u/102633625?v=4" width=115><br><sub>Daniel Caumo</sub>](https://github.com/camilafernanda) |
+| [<img src="https://avatars.githubusercontent.com/u/102633625?v=4" width=115><br><sub>Daniel Caumo</sub>](https://github.com/camilafernanda) |
 | :---: | 
 
 <h2>Licença</h2>
