@@ -34,7 +34,7 @@ Status do Projeto
 <p>Para utilizar a cálculadora de tintas é apenas necessário informar as alturas e larguras das paredes, a quantidade de portas e janelas e apertar o botão calcular que ela efetua os cálculos de superfície e quantidade de tinta para cada parede, bem como a superfície e quantidade de tintas totais, também distribui a melhor otimização na compra das latas priorizando sempre latas maiores.</p>
 
 <h2>Acesso ao Projeto</h2>
-<p>O projeto pode ser acessado no GitHub Pages pelo link:</p>
+<p>O projeto pode ser acessado no GitHub Pages pelo link:</p> [Compasso Tintas](https://danielcaumo.github.io/CompassoTintas/)
 
 <h2>Tecnologias utilizadas</h2>
 <p>Nesse projeto foram utilizados: HTML5, CSS3 e JavaScript
