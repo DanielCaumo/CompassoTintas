@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tinta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/logo.svg" alt="Compasso Tintas" class="logo-imagem">
+            </a>
+        </h1>
+        <div class="menuDesktop vidro pintura-gradiente">
+            <ul id="menu-desktop" class="vidro">
+                <li class=" menu-item-desktop pintura-gradiente">
+                    <a href="catalogo.html" class="menu-link-desktop  vidro">
+                        <i class="fa-solid fa-swatchbook icone"></i>
+                        <p class="link-texto">escolher</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="calculadora.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-calculator icone"></i>
+                        <p class="link-texto">calcular</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="carrinho.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-cart-shopping icone"></i>
+                        <p class="link-texto">comprar</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="cadastro.html" class="menu-link-desktop menu-link-perfil vidro">
+                        <i class="fa-solid fa-user icone"></i>
+                        <p class="link-texto">perfil</p>
+                    </a>
+                </li>
+        </div>
+        <nav role="navigation">
+            <div id="menuMobile">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="vidro">
+                    <li class="pintura-gradiente">
+                        <a href="index.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-house icone"></i>
+                            home
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="cadastro.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-id-card icone"></i>
+                            meu perfil
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="catalogo.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-swatchbook icone"></i>
+                            escolher
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="calculadora.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            calcular
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="carrinho.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            comprar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="secao-titulo-principal secao-titulo vidro">Calculadora de Tintas</h2>
+        <section class="palheta-de-cores">
+        </section>
+
+        <section class="container-info-regras vidro">
+            <article class="apresentacao">
+                <h3 class="apresentacao-titulo">Algumas regrinhas importantes!</h3>
+                <p class="apresentacao-texto">Para facilitar o cálculo, tenho algumas regrinhas que validam as medidas informadas, como: </p>
+                <p class="apresentacao-texto"> * O ambiente precisa ter pelo menos uma porta.</p>
+                <p class="apresentacao-texto"> * Uma parede não pode ter nem menos do que 1m² nem mais do que 50m².</p>
+                <p class="apresentacao-texto"> * A altura das paredes com portas precisam ter pelo menos 30cm a mais do que a altura padrão de uma porta (1,90m).</p>
+                <p class="apresentacao-texto"> * A área das portas e janelas não podem ultrapassa 50% da área da parede.</p>
+                <p class="apresentacao-texto"> * Nos certificamos que na largura da parede comportará as portas e janelas informadas.</p>
+            </article>
+        </section>
+        <section class="paredes">
+            <div class="card-parede">
+                <form action="" class="parede pintura-gradiente">
+                    <fieldset id="parede1" class="parede">
+                        <div class="container-titulo">
+                            <legend class="titulo-parede">Parede 1</legend>
+                        </div>
+                        <div class="formulario-secao">
+
+                            <div class="formulario-input-cor">
+                                <div class="label-container-cor">
+                                    <i class="fa-solid fa-swatchbook icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">cor</label>
+                                </div>
+                                <div class="campo-container">
+                                    <select type="color" name="cor" id="cor1" class="cor"
+                                        aria-placeholder="escolha a cor"></select>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-left-right icone-campo"></i>
+                                    <label for="largura" class="campo-titulo">largura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input id="largura1" name="largura" type="number" min="0" step="0.1" class="campo largura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-arrows-up-down icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">altura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="altura" type="number" min="0" step="0.1" class="campo altura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-door-closed icone-campo"></i>
+                                    <label for="portas" class="campo-titulo">portas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="portas" type="number" min="0" step="1" class="campo portas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-table-cells-large icone-campo"></i>
+                                    <label for="janelas" class="campo-titulo">janelas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="janelas" type="number" min="0" step="1" class="campo janelas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-resultado-parede">
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-swatchbook icone-campo-resultado"></i>
+                                <h3 class="print-resultado-parede cor-parede"></h3>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-maximize icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">superfície</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede superficie">0</h3>
+                                    <h3 class="print-resultado-parede">m²</h3>
+                                </div>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-fill-drip icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">tinta necessária</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede tinta-parede">0</h3>
+                                    <h3 class="print-resultado-parede">litros</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="card-parede">
+                <form action="" class="parede pintura-gradiente">
+                    <fieldset id="parede1" class="parede">
+                        <div class="container-titulo">
+                            <legend class="titulo-parede">Parede 2</legend>
+                        </div>
+                        <div class="formulario-secao">
+
+                            <div class="formulario-input-cor">
+                                <div class="label-container-cor">
+                                    <i class="fa-solid fa-swatchbook icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">cor</label>
+                                </div>
+                                <div class="campo-container">
+                                    <select type="color" name="cor" id="cor1" class="cor"
+                                        aria-placeholder="escolha a cor"></select>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-left-right icone-campo"></i>
+                                    <label for="largura" class="campo-titulo">largura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="largura" type="number" min="0" step="0.1" class="campo largura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-arrows-up-down icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">altura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="altura" type="number" min="0" step="0.1" class="campo altura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-door-closed icone-campo"></i>
+                                    <label for="portas" class="campo-titulo">portas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="portas" type="number" min="0" step="1" class="campo portas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-table-cells-large icone-campo"></i>
+                                    <label for="janelas" class="campo-titulo">janelas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="janelas" type="number" min="0" step="1" class="campo janelas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-resultado-parede">
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-swatchbook icone-campo-resultado"></i>
+                                <h3 class="print-resultado-parede cor-parede"></h3>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-maximize icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">superfície</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede superficie">0</h3>
+                                    <h3 class="print-resultado-parede">m²</h3>
+                                </div>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-fill-drip icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">tinta necessária</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede tinta-parede">0</h3>
+                                    <h3 class="print-resultado-parede">litros</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="card-parede">
+                <form action="" class="parede pintura-gradiente">
+                    <fieldset id="parede1" class="parede">
+                        <div class="container-titulo">
+                            <legend class="titulo-parede">Parede 3</legend>
+                        </div>
+                        <div class="formulario-secao">
+
+                            <div class="formulario-input-cor">
+                                <div class="label-container-cor">
+                                    <i class="fa-solid fa-swatchbook icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">cor</label>
+                                </div>
+                                <div class="campo-container">
+                                    <select type="color" name="cor" id="cor1" class="cor"
+                                        aria-placeholder="escolha a cor"></select>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-left-right icone-campo"></i>
+                                    <label for="largura" class="campo-titulo">largura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="largura" type="number" min="0" step="0.1" class="campo largura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-arrows-up-down icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">altura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="altura" type="number" min="0" step="0.1" class="campo altura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-door-closed icone-campo"></i>
+                                    <label for="portas" class="campo-titulo">portas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="portas" type="number" min="0" step="1" class="campo portas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-table-cells-large icone-campo"></i>
+                                    <label for="janelas" class="campo-titulo">janelas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="janelas" type="number" min="0" step="1" class="campo janelas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-resultado-parede">
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-swatchbook icone-campo-resultado"></i>
+                                <h3 class="print-resultado-parede cor-parede"></h3>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-maximize icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">superfície</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede superficie">0</h3>
+                                    <h3 class="print-resultado-parede">m²</h3>
+                                </div>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-fill-drip icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">tinta necessária</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede tinta-parede">0</h3>
+                                    <h3 class="print-resultado-parede">litros</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="card-parede">
+                <form action="" class="parede pintura-gradiente">
+                    <fieldset id="parede1" class="parede">
+                        <div class="container-titulo">
+                            <legend class="titulo-parede">Parede 4</legend>
+                        </div>
+                        <div class="formulario-secao">
+
+                            <div class="formulario-input-cor">
+                                <div class="label-container-cor">
+                                    <i class="fa-solid fa-swatchbook icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">cor</label>
+                                </div>
+                                <div class="campo-container">
+                                    <select type="color" name="cor" id="cor1" class="cor"
+                                        aria-placeholder="escolha a cor"></select>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-left-right icone-campo"></i>
+                                    <label for="largura" class="campo-titulo">largura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="largura" type="number" min="0" step="0.1" class="campo largura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-arrows-up-down icone-campo"></i>
+                                    <label for="altura" class="campo-titulo">altura</label>
+                                    <p class="instrucao">(metros)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="altura" type="number" min="0" step="0.1" class="campo altura"
+                                        placeholder="0" required>
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-door-closed icone-campo"></i>
+                                    <label for="portas" class="campo-titulo">portas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="portas" type="number" min="0" step="1" class="campo portas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+
+                            <div class="formulario-input">
+                                <div class="label-container">
+                                    <i class="fa-solid fa-table-cells-large icone-campo"></i>
+                                    <label for="janelas" class="campo-titulo">janelas</label>
+                                    <p class="instrucao">(quantidade)</p>
+                                </div>
+                                <div class="campo-container">
+                                    <input name="janelas" type="number" min="0" step="1" class="campo janelas"
+                                        placeholder="0">
+                                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-resultado-parede">
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-swatchbook icone-campo-resultado"></i>
+                                <h3 class="print-resultado-parede cor-parede"></h3>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-maximize icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">superfície</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede superficie">0</h3>
+                                    <h3 class="print-resultado-parede">m²</h3>
+                                </div>
+                            </div>
+                            <div class="container-info-parede">
+                                <i class="fa-solid fa-fill-drip icone-campo-resultado"></i>
+                                <h3 class="resultado-titulo">tinta necessária</h3>
+                                <div class="container-resultado-celula">
+                                    <h3 class="print-resultado-parede tinta-parede">0</h3>
+                                    <h3 class="print-resultado-parede">litros</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="botoes">
+            <button id="Resetar" type="submit" class="botao pintura-gradiente">limpar</button>
+            </div>
+            <button id="Calcular" type="submit" class="botao pintura-gradiente">calcular</button>
+            </div>
+        </section>
+        <section class="resultado-final">
+            <h2 class="secao-titulo">Resultado</h2>
+            <div class="container-totais">
+                <div class="total-container-cor">
+                    <i class="fa-solid fa-swatchbook icone-campo-resultado"></i>
+                    <h3 class="resultado-titulo">Cor</h3>
+                    <h3 id="cor-final" class="print-resultado-parede"></h3>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-maximize icone-campo-resultado"></i>
+                    <h3 class="resultado-titulo">Superfície Total (m²)</h3>
+                    <h3 id="superficie-total" class="print-resultado-parede">0</h3>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-fill-drip icone-campo-resultado"></i>
+                    <h3 class="resultado-titulo">Tinta Necessária (litros)</h3>
+                    <h3 id="tinta-total" class="print-resultado-parede">0</h3>
+                </div>
+                <div id="container-diferenca" class="total-container">
+                    <i class="fa-solid fa-plus-minus"></i>
+                    <h3 id="titulo-diferenca" class="resultado-titulo">Diferença</h3>
+                    <div class="container-resultado-celula">
+                        <h3 id="diferenca" class="print-resultado-parede diferenca">0</h3>
+                        <h3 id="litros-diferenca" class="print-resultado-parede">litros</h3>
+                    </div>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-glass-water"></i>
+                    <h3 class="resultado-titulo">Latas de 18L</h3>
+                    <div class="container-resultado-celula">
+                        <button type="submit" class="botao-quantidade botao-menos">-</button>
+                        <h3 id="lata180" class="print-resultado-parede ">0</h3>
+                        <button type="submit" class="botao-quantidade botao-mais">+</button>
+                    </div>
+                    <span class="campo-mensagem-erro">O valor informado é inválido</span>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-glass-water"></i>
+                    <h3 class="resultado-titulo">Latas de 3.6L</h3>
+                    <div class="container-resultado-celula">
+                        <button type="submit" class="botao-quantidade botao-menos">-</button>
+                        <h3 id="lata36" class="print-resultado-parede resultado-lata">0</h3>
+                        <button type="submit" class="botao-quantidade botao-mais">+</button>
+                    </div>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-glass-water"></i>
+                    <h3 class="resultado-titulo">Latas de 2.5L</h3>
+                    <div class="container-resultado-celula">
+                        <button type="submit" class="botao-quantidade botao-menos">-</button>
+                        <h3 id="lata25" class="print-resultado-parede resultado-lata">0</h3>
+                        <button type="submit" class="botao-quantidade botao-mais">+</button>
+                    </div>
+                </div>
+                <div class="total-container">
+                    <i class="fa-solid fa-glass-water"></i>
+                    <h3 class="resultado-titulo">Latas de 0.5L</h3>
+                    <div class="container-resultado-celula">
+                        <button type="submit" class="botao-quantidade botao-menos">-</button>
+                        <h3 id="lata5" class="print-resultado-parede resultado-lata">0</h3>
+                        <button type="submit" class="botao-quantidade botao-mais">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <section class="informacoes">
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Institucional</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Quem somos</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Entrega</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Troca e Devolução</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Privacidade</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Termos e Condições de Uso</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Atendimento</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-clipboard-question rodape-icone"></i>
+                        <a href="#" class="rodape-link">Perguntas frequentes</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-comments rodape-icone"></i>
+                        <a href="#" class="rodape-link">Chat</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 20h)</p>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-phone rodape-icone"></i>
+                        <a href="#" class="rodape-link">Telefone: (51)3333.3333</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 17h)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Redes Sociais</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-facebook icone-sociais"></i>
+                        <a href="" class="rodape-link">Facebook</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-twitter icone-sociais"></i>
+                        <a href="" class="rodape-link">Twitter</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-instagram-square icone-sociais"></i>
+                        <a href="" class="rodape-link">Instagram</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-pinterest icone-sociais"></i>
+                        <a href="" class="rodape-link">Pinterest</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-youtube icone-sociais"></i>
+                        <a href="" class="rodape-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyrights">
+            <p class="texto__rodape">&#169; Compasso Tintas - uma marca Compasso - todos os direitos reservados.</p>
+            <p class="texto__rodape">Compasso Tecnologia LTDA - CNPJ: 07.654.824/0001-24 </p>
+        </section>
+    </footer>
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>

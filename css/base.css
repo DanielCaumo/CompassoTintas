@@ -1,0 +1,28 @@
+@import url(../assets/css/reset.css);
+@import url(sections/botoes.css);
+@import url(sections/titulos.css);
+@import url(sections/header.css);
+@import url(sections/footer.css);
+@import url(sections/effects.css);
+@import url(../assets/css/all.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    /* CORES */
+    --cor-de-fundo: #EBECEE;
+    --cor-de-icones: #333;
+    --cor-rodape1: #c2c7c8;
+    --cor-rodape2: #d4d7d8;
+    --cor-rodape3: #82817f;
+    --cor-aviso: coral;
+    /* FONTES */
+    --fonte-titulos: "Poppins";
+    --fonte-textos: "Montserrat";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-titulos);
+    font-size: 18px;
+    font-weight: 300;
+}

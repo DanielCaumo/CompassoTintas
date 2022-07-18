@@ -1,0 +1,18 @@
+.secao-titulo {
+    background-color: var(--cor-de-fundo);
+	display: flex;
+	width: 100vw;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid var(--cor-de-fundo);
+	font-family: var(--fonte-titulos);
+	font-weight: 700;
+	color: black;
+}
+
+.secao-titulo-principal {
+	margin-top: 80px;
+	position: fixed;
+	z-index: 1;
+}

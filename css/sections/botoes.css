@@ -1,0 +1,22 @@
+.botao{
+    font-family: var(--fonte-titulos);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 45%;
+    background: gainsboro;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .botao{
+        padding: 0.5rem;
+        width: 45%;
+        background: gainsboro;
+        border: 1px solid whitesmoke;
+        border-radius: 50px;
+    }
+
+}

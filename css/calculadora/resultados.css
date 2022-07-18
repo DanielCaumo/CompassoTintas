@@ -1,0 +1,46 @@
+img {
+	height: 22px;
+}
+
+.resultado-final {
+	display: flex;
+    flex-direction: column;
+}
+
+.container-totais {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.total-container,
+.total-container-cor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 150px;
+    background-color: whitesmoke;
+}
+
+.total-container:hover {
+    background-color: var(--cor-de-fundo);
+}
+
+.lata {
+    background-color: var(--cor-de-fundo);
+}
+
+.botao-quantidade {
+    margin: 0 0.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+	.total-container,
+    .total-container-cor {
+        width: 12.5%;
+    }
+}

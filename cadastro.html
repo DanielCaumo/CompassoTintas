@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/fundocor.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/logo.svg" alt="Compasso Tintas" class="logo-imagem">
+            </a>
+        </h1>
+        <div class="menuDesktop vidro pintura-gradiente">
+            <ul id="menu-desktop" class="vidro">
+                <li class=" menu-item-desktop pintura-gradiente">
+                    <a href="catalogo.html" class="menu-link-desktop  vidro">
+                        <i class="fa-solid fa-swatchbook icone"></i>
+                        <p class="link-texto">escolher</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="calculadora.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-calculator icone"></i>
+                        <p class="link-texto">calcular</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="carrinho.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-cart-shopping icone"></i>
+                        <p class="link-texto">comprar</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="cadastro.html" class="menu-link-desktop menu-link-perfil vidro">
+                        <i class="fa-solid fa-user icone"></i>
+                        <p id="nome-perfil" class="link-texto">perfil</p>
+                    </a>
+                </li>
+        </div>
+        <nav role="navigation">
+            <div id="menuMobile">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="vidro">
+                    <li class="pintura-gradiente">
+                        <a href="index.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-house icone"></i>
+                            home
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="cadastro.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-id-card icone"></i>
+                            meu perfil
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="catalogo.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-swatchbook icone"></i>
+                            escolher
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="calculadora.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            calcular
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="carrinho.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            comprar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="gradient">
+        <h2 class="secao-titulo-principal secao-titulo vidro">Meu Perfil</h2>
+        <section class="container-info vidro">
+            <article class="apresentacao">
+                <h3 class="apresentacao-titulo">Boas vindas!</h3>
+                <p class="apresentacao-texto">É um prazer te receber aqui! Nossa objetivo é ajudar a colocar um pouco de
+                    cor na sua vida. Seja na obra ou na reforma.</p>
+                <p class="apresentacao-texto">Realizando o cadastro você conseguirá tirar o máximo proveito das nossas
+                    ferramentas. Poderá salvar as paletas de cores escolhidas e medidas dos cômodos para saber a exata
+                    quantide irá precisar.</p>
+            </article>
+        </section>
+        <section class="cadastro">
+            <h3 class="cartao-titulo">Cadastro</h2>
+                <form action="" class="formulario-cadastro">
+                    <fieldset class="secao-container">
+                        <legend class="formulario-titulo-secao">Dados pessoais</legend>
+                        <div class="formulario-secao vidro">
+                            <div class="formulario-campo">
+                                <label for="nome" class="campo-titulo">Nome</label>
+                                <input name="nome" type="name" id="nome" class="campo"
+                                    placeholder="Digite seu nome e sobrenome" data-tipo="nome" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="data" class="campo-titulo">Data de nascimento</label>
+                                <input name="data" type="date" id="data" class="campo" placeholder="00/00/0000"
+                                    data-tipo="data" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="cpf" class="campo-titulo">CPF</label>
+                                <input name="cpf" type="text" id="cpf" class="campo" placeholder="000.000.000-00"
+                                    data-tipo="cpf" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="senha" class="campo-titulo">Senha</label>
+                                <input name="senha" type="password" id="senha" class="campo"
+                                    placeholder="Digite uma senha" data-tipo="senha" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="senha" class="campo-titulo">Confirmar senha</label>
+                                <input name="senha" type="password" id="senha-confirmacao" class="campo"
+                                    placeholder="Repita a senha" data-tipo="senha" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="secao-container vidro">
+                        <legend class="formulario-titulo-secao">Contatos</legend>
+                        <div class="formulario-secao">
+                            <div class="formulario-campo">
+                                <label for="telefone" class="campo-titulo">Telefone</label>
+                                <input name="telefone" type="tel" id="telefone" class="campo"
+                                    placeholder="(xx) xxxxx-xxxx" data-tipo="telefone" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="email" class="campo-titulo">Email</label>
+                                <input name="email" type="email" id="email" class="campo" placeholder="nome@email.com"
+                                    data-tipo="email" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="secao-container vidro">
+                        <legend class="formulario-titulo-secao">Endereço</legend>
+                        <div class="formulario-secao">
+                            <div class="formulario-campo">
+                                <label for="CEP" class="campo-titulo">CEP</label>
+                                <input name="CEP" type="text" id="CEP" class="campo" placeholder="xx.xxx-xx"
+                                    data-tipo="cep" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="logradouro" class="campo-titulo">Logradouro</label>
+                                <input name="logradouro" type="text" id="logradouro" class="campo"
+                                    placeholder="Digite o logradouro" data-tipo="logradouro" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <div class="formulario-campo-interno">
+                                    <label for="numero" class="campo-titulo">Número</label>
+                                    <input name="numero" type="text" id="numero" class="campo" placeholder="xxx"
+                                        data-tipo="numero" required>
+                                    <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                                </div>
+                                <div class="formulario-campo-interno">
+                                    <label for="complemento" class="campo-titulo">Complemento</label>
+                                    <input name="complemento" type="text" id="complemento" class="campo"
+                                        placeholder="xxx" data-tipo="complemento" required>
+                                    <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                                </div>
+                            </div>
+                            <div class="formulario-campo">
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="cidade" class="campo-titulo">Cidade</label>
+                                <input name="cidade" type="text" id="cidade" class="campo" placeholder="xxx"
+                                    data-tipo="cidade" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                            <div class="formulario-campo">
+                                <label for="estado" class="campo-titulo">Estado</label>
+                                <input name="estado" type="text" id="estado" class="campo" placeholder="xxx"
+                                    data-tipo="estado" required>
+                                <span class="campo-mensagem-erro">O dado informado é inválido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="botoes-container">
+                    <button id="botao-cadastro-limpar" class="botao pintura-gradiente">limpar dados</button>
+                    <button id="botao-cadastro-enviar" class="botao pintura-gradiente">enviar</button>
+                </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        </section>
+        <section class="informacoes">
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Institucional</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Quem somos</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Entrega</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Troca e Devolução</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Privacidade</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Termos e Condições de Uso</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Atendimento</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-clipboard-question rodape-icone"></i>
+                        <a href="#" class="rodape-link">Perguntas frequentes</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-comments rodape-icone"></i>
+                        <a href="#" class="rodape-link">Chat</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 20h)</p>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-phone rodape-icone"></i>
+                        <a href="#" class="rodape-link">Telefone: (51)3333.3333</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 17h)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Redes Sociais</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-facebook icone-sociais"></i>
+                        <a href="" class="rodape-link">Facebook</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-twitter icone-sociais"></i>
+                        <a href="" class="rodape-link">Twitter</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-instagram-square icone-sociais"></i>
+                        <a href="" class="rodape-link">Instagram</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-pinterest icone-sociais"></i>
+                        <a href="" class="rodape-link">Pinterest</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-youtube icone-sociais"></i>
+                        <a href="" class="rodape-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyrights">
+            <p class="texto__rodape">&#169; Compasso Tintas - uma marca Compasso - todos os direitos reservados.</p>
+            <p class="texto__rodape">Compasso Tecnologia LTDA - CNPJ: 07.654.824/0001-24 </p>
+        </section>
+    </footer>
+    <script src="js/cadastro.js"></script>
+</body>
+
+</html>

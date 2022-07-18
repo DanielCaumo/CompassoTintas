@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compasso Tintas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/logo.svg" alt="Compasso Tintas" class="logo-imagem">
+            </a>
+        </h1>
+        <div class="menuDesktop vidro pintura-gradiente">
+            <ul id="menu-desktop" class="vidro">
+                <li class=" menu-item-desktop pintura-gradiente">
+                    <a href="catalogo.html" class="menu-link-desktop  vidro">
+                        <i class="fa-solid fa-swatchbook icone"></i>
+                        <p class="link-texto">escolher</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="calculadora.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-calculator icone"></i>
+                        <p class="link-texto">calcular</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="carrinho.html" class="menu-link-desktop vidro">
+                        <i class="fa-solid fa-cart-shopping icone"></i>
+                        <p class="link-texto">comprar</p>
+                    </a>
+                </li>
+                <li class="menu-item-desktop pintura-gradiente">
+                    <a href="cadastro.html" class="menu-link-desktop menu-link-perfil vidro">
+                        <i class="fa-solid fa-user icone"></i>
+                        <p class="link-texto">perfil</p>
+                    </a>
+                </li>
+        </div>
+        <nav role="navigation">
+            <div id="menuMobile">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="vidro">
+                    <li class="pintura-gradiente">
+                        <a href="index.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-house icone"></i>
+                            home
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="cadastro.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-id-card icone"></i>
+                            meu perfil
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="catalogo.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-swatchbook icone"></i>
+                            escolher
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="calculadora.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            calcular
+                        </a>
+                    </li>
+                    <li class="pintura-gradiente">
+                        <a href="carrinho.html" class="menu-link-mobile vidro">
+                            <i class="fa-solid fa-calculator icone"></i>
+                            comprar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="principal">
+
+        <img src="assets/img/wallpaint.jpg" alt="" class="fundo">
+        <div class="frente">
+            <section class="destaques">
+                <div class="cartao">
+                    <h2 class="cartao__titulo">Boas vindas!</h2>
+                    <img src="" alt="">
+                    <h3 class="cartao__chamada">Se você está aqui é porque quer colocar um pouco mais de cor na sua vida. E o nosso objetivo é facilitar o processo com ferramentas desenvolvidas para a sua necessidade. Mas para fazer acontecer é preciso seguir os seguintes passos:</h2>
+                </div>
+                <div class="cartao">
+                    <h2 class="cartao__titulo">1. Crie o seu perfil</h2>
+                    <img src="" alt="">
+                    <p class="cartao__texto">Cadastre-se para criar e salvar a sua própria paleta de cores e ambientes com medidas que facilitaram na compra da quantidade certa de tinta.</p>
+                    <a href="cadastro.html" class="botao">Cadastrar</a>
+                </div>
+                <div class="cartao">
+                    <h2 class="cartao__titulo">2. Crie a sua própria paleta de cores</h2>
+                    <img src="" alt="">
+                    <p class="cartao__texto"> Já criou o seu perfil? Então chegou a hora de escolher a cor. São muitas cores disponíveis para você escolher, mas na hora de construir ou reformar as escolhas precisam estar bem definidas, por isso temos uma ferramenta que permite criar paletas de cores próprias selecionando entre as milhares de cores que disponibilizamos, essas paletas sempre estarão salvas no seu perfil para quando precisar retocar a pintura.</p>
+                    <a href="catalogo.html" class="botao">Escolher</a>
+                </div>
+                <div class="cartao">
+                    <h2 class="cartao__titulo">3. Calcule a quantidade de tinta necessária</h2>
+                    <img src="" alt="">
+                    <p class="cartao__texto">Já escolheu a cor mas não sabe quanta tinta precisa comprar? Não tem problema! Essa ferramenta te ajuda a calcular a quantidade de tinta exata para a pintura, além de sugerir uma opção de compra. O melhor é que você poderá salvar os ambientes para agilizar o processo no futuro.</p>
+                    <a href="calculadora.html" class="botao">Calcular</a>
+                </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <section class="newsletter">
+            <h2 class="titulo-newsletter"><i class="fa-solid fa-newspaper"></i> Newsletter</h2>
+            <div class="newsletter-conteudo">
+                <p class="newsletter__texto">Inscreva-se e receba dicas de decoração, uso de cores, novidades e
+                    promoções:</p>
+                <div class="email">
+                    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+                    <i class="fa-solid fa-circle-chevron-right icone-enviar"></i>
+                </div>
+            </div>
+        </section>
+        <section class="informacoes">
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Institucional</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Quem somos</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Entrega</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Troca e Devolução</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Política de Privacidade</a>
+                    </li>
+                    <li class="rodape-item">
+                        <img src="" alt="" class="rodape-icone">
+                        <a href="#" class="rodape-link">Termos e Condições de Uso</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Atendimento</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-clipboard-question rodape-icone"></i>
+                        <a href="#" class="rodape-link">Perguntas frequentes</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-comments rodape-icone"></i>
+                        <a href="#" class="rodape-link">Chat</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 20h)</p>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-solid fa-phone rodape-icone"></i>
+                        <a href="#" class="rodape-link">Telefone: (51)3333.3333</a>
+                        <p class="rodape-texto"> (segunda a sexta, das 8h às 17h)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape-bloco">
+                <h2 class="titulo-bloco">Redes Sociais</h2>
+                <ul class="lista-rodape">
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-facebook icone-sociais"></i>
+                        <a href="" class="rodape-link">Facebook</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-twitter icone-sociais"></i>
+                        <a href="" class="rodape-link">Twitter</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-instagram-square icone-sociais"></i>
+                        <a href="" class="rodape-link">Instagram</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-pinterest icone-sociais"></i>
+                        <a href="" class="rodape-link">Pinterest</a>
+                    </li>
+                    <li class="rodape-item">
+                        <i class="fa-brands fa-youtube icone-sociais"></i>
+                        <a href="" class="rodape-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyrights">
+            <p class="texto__rodape">&#169; Compasso Tintas - uma marca Compasso - todos os direitos reservados.</p>
+            <p class="texto__rodape">Compasso Tecnologia LTDA - CNPJ: 07.654.824/0001-24 </p>
+        </section>
+    </footer>
+</body>
+
+</html>

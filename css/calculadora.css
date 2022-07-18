@@ -1,0 +1,15 @@
+@import url(calculadora/paredes.css);
+@import url(calculadora/botoes.css);
+@import url(calculadora/resultados.css);
+@import url(base.css);
+
+
+
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--cor-rodape2);
+}

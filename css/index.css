@@ -1,0 +1,109 @@
+.principal {
+    height: 100vh;
+    background: rgb(79,144,163);
+    background: linear-gradient(90deg, rgba(79,144,163,1) 0%, rgba(91,157,171,1) 21%, rgba(120,189,204,1) 54%, rgba(120,189,204,1) 80%, rgba(120,189,204,1) 100%);
+    text-align: center;
+}
+
+.fundo {
+    display: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1650px) {
+    .fundo {
+        height: 100vh;
+        width: auto;
+        clip-path: polygon(91% 87%, 100% 100%, 1% 100%, 10% 87%, 10% 0%, 91% 0%);
+    }
+}
+
+.frente {
+    position: relative;
+    top: -100vh;
+    height: 100vh;
+    margin-bottom: -100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.destaques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    max-width: 1800vw;
+    margin: 50px auto;
+}
+
+.cartao {
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+    transition-duration: 1s;
+}
+
+.cartao:hover {
+    height: auto;
+    width: 70%;
+    margin-top: 100px;
+    background: rgba(89, 165, 179, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+}
+
+.cartao__titulo {
+    font-family: var(--fonte-titulos);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 2rem;
+}
+
+.cartao__chamada {
+    font-family: var(--fonte-textos);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 0rem 1rem;
+}
+
+.cartao__texto {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.cartao:hover p {
+    display: block;
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .cartao {
+        height: auto;
+        width: 50%;
+        margin-top: 50px;
+        transition-duration: 1s;
+    }
+    
+    .cartao:hover {
+        height: auto;
+        width: 70%;
+        margin-top: 100px;
+        background: rgba(89, 165, 179, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+    }
+}
